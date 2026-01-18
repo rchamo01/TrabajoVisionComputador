@@ -1,9 +1,5 @@
 import cv2
 
-# =========================
-# Cargar clasificadores
-# =========================
-
 face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
@@ -12,9 +8,6 @@ smile_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_smile.xml"
 )
 
-# =========================
-# Inicializar cámara
-# =========================
 
 cam = cv2.VideoCapture(0)
 
@@ -67,3 +60,4 @@ while True:
 
 cam.release()
 cv2.destroyAllWindows()
+
